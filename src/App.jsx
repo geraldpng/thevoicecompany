@@ -12,7 +12,7 @@ const MODAL_SCREENS = { cave: Cave, forest: Forest, constellation: Constellation
 
 const LOCATIONS = [
   { id: 'cave',          number: 1, title: ['Crystal','Resonance Cave'],  desc: 'Discover the power of your voice within.',    x: '15%', y: '22%' },
-  { id: 'forest',        number: 2, title: ['Harmonic','Forest'],         desc: 'Breathe. Connect. Find your natural tone.',   x: '43%', y: '14%' },
+  { id: 'forest',        number: 2, title: ['Harmonic','Forest'],         desc: 'Breathe. Connect. Find your natural tone.',   x: '43%', y: '20%' },
   { id: 'stage',         number: 3, title: ['Golden','Amphitheatre'],     desc: 'Perform. Inspire. Be heard.',                 x: '72%', y: '19%' },
   { id: 'constellation', number: 4, title: ['Constellation','Pathway'],   desc: 'Follow the stars. Unlock your potential.',    x: '13%', y: '56%' },
   { id: 'aria',          number: 5, title: ['Celestial','Conservatory'],  desc: 'Nurture your voice. Refine your artistry.',   x: '44%', y: '60%' },
@@ -263,14 +263,13 @@ export default function App() {
 
       {/* Floating header */}
       <div style={{
-        position:'fixed', top:0, right:0, height:56, zIndex:20,
+        position:'fixed', top:0, right:0, height:80, zIndex:20,
         left: offset,
         opacity: hubReady ? 1 : 0,
-        background:'rgba(4,4,10,0.55)',
-        backdropFilter:'blur(16px)', WebkitBackdropFilter:'blur(16px)',
-        borderBottom:'1px solid rgba(212,175,55,0.12)',
-        display:'flex', alignItems:'center', justifyContent:'space-between',
-        padding:'0 24px',
+        background:'linear-gradient(180deg, rgba(4,4,10,0.72) 0%, rgba(4,4,10,0.35) 60%, transparent 100%)',
+        borderBottom:'none',
+        display:'flex', alignItems:'flex-start', justifyContent:'space-between',
+        padding:'14px 24px 0',
         transition:'left 0.38s cubic-bezier(0.4,0,0.2,1), opacity 1s 0.15s ease',
       }}>
         <div style={{ display:'flex', alignItems:'baseline', gap:12 }}>
@@ -289,14 +288,13 @@ export default function App() {
 
       {/* Floating bottom bar */}
       <div style={{
-        position:'fixed', bottom:0, right:0, height:62, zIndex:20,
+        position:'fixed', bottom:0, right:0, height:80, zIndex:20,
         left: offset,
         opacity: hubReady ? 1 : 0,
-        background:'rgba(4,4,10,0.55)',
-        backdropFilter:'blur(16px)', WebkitBackdropFilter:'blur(16px)',
-        borderTop:'1px solid rgba(212,175,55,0.12)',
-        display:'flex', alignItems:'center', justifyContent:'space-between',
-        padding:'0 24px',
+        background:'linear-gradient(0deg, rgba(4,4,10,0.72) 0%, rgba(4,4,10,0.35) 60%, transparent 100%)',
+        borderTop:'none',
+        display:'flex', alignItems:'flex-end', justifyContent:'space-between',
+        padding:'0 24px 14px',
         transition:'left 0.38s cubic-bezier(0.4,0,0.2,1), opacity 1s 0.4s ease',
       }}>
         <GoldBtn onClick={() => setInspModal(true)}>\u2726 DAILY INSPIRATION</GoldBtn>
