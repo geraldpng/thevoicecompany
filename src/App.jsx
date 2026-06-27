@@ -20,64 +20,64 @@ const LOCATIONS = [
 ]
 
 const NAV_ITEMS = [
-  { icon: '\u2302', label: 'HOME'         },
-  { icon: '\u2726', label: 'MY JOURNEY'   },
-  { icon: '\u266a', label: 'PRACTICE'     },
-  { icon: '\u25c8', label: 'VOICEIQ'      },
-  { icon: '\u25b2', label: 'PROGRESS'     },
-  { icon: '\u25c9', label: 'ACHIEVEMENTS' },
-  { icon: '\u25ce', label: 'PROFILE'      },
+  { icon: '⌂', label: 'HOME'         },
+  { icon: '✦', label: 'MY JOURNEY'   },
+  { icon: '♪', label: 'PRACTICE'     },
+  { icon: '◈', label: 'VOICEIQ'      },
+  { icon: '▲', label: 'PROGRESS'     },
+  { icon: '◉', label: 'ACHIEVEMENTS' },
+  { icon: '◎', label: 'PROFILE'      },
 ]
 
 const INSPIRATIONS = [
-  { quote: 'Your voice is the mirror of your soul. Polish it daily.',               author: '\u2014 The Voice Company' },
-  { quote: 'Every great singer was once a beginner who refused to give up.',        author: '\u2014 Ancient Wisdom'    },
-  { quote: 'Breath is the foundation. Master the breath, master the voice.',        author: '\u2014 Vocal Tradition'   },
-  { quote: 'Sing not to be heard, but because the song must be released.',          author: '\u2014 The Voice Company' },
-  { quote: 'Resonance is not found. It is uncovered.',                             author: '\u2014 Vocal Teaching'    },
+  { quote: 'Your voice is the mirror of your soul. Polish it daily.',               author: '— The Voice Company' },
+  { quote: 'Every great singer was once a beginner who refused to give up.',        author: '— Ancient Wisdom'    },
+  { quote: 'Breath is the foundation. Master the breath, master the voice.',        author: '— Vocal Tradition'   },
+  { quote: 'Sing not to be heard, but because the song must be released.',          author: '— The Voice Company' },
+  { quote: 'Resonance is not found. It is uncovered.',                             author: '— Vocal Teaching'    },
 ]
 
 const NAV_PANELS = {
-  'MY JOURNEY': { title: 'My Vocal Journey', icon: '\u2726', content: [
-    { label: 'Week 1', detail: 'Foundations \u2014 Breath & Posture', done: true  },
+  'MY JOURNEY': { title: 'My Vocal Journey', icon: '✦', content: [
+    { label: 'Week 1', detail: 'Foundations — Breath & Posture', done: true  },
     { label: 'Week 2', detail: 'Resonance & Placement',                done: true  },
     { label: 'Week 3', detail: 'Pitch Control & Ear Training',         done: true  },
     { label: 'Week 4', detail: 'Dynamics & Expression',                done: false },
     { label: 'Week 5', detail: 'Performance & Stage Presence',         done: false },
     { label: 'Week 6', detail: 'Mastery & Artistry',                   done: false },
   ]},
-  'PRACTICE': { title: 'Practice Sessions', icon: '\u266a', content: [
-    { label: 'Morning Warm-Up',     detail: '10 min \u00b7 Breath + Sirens',      done: false },
-    { label: 'Pitch Drills',        detail: '15 min \u00b7 Scales & Intervals',   done: false },
-    { label: 'Resonance Mapping',   detail: '20 min \u00b7 Chest & Head Voice',   done: false },
-    { label: 'Power Builder',       detail: '25 min \u00b7 Projection & Support', done: false },
-    { label: 'Song Interpretation', detail: '30 min \u00b7 Phrasing & Dynamics',  done: false },
+  'PRACTICE': { title: 'Practice Sessions', icon: '♪', content: [
+    { label: 'Morning Warm-Up',     detail: '10 min · Breath + Sirens',      done: false },
+    { label: 'Pitch Drills',        detail: '15 min · Scales & Intervals',   done: false },
+    { label: 'Resonance Mapping',   detail: '20 min · Chest & Head Voice',   done: false },
+    { label: 'Power Builder',       detail: '25 min · Projection & Support', done: false },
+    { label: 'Song Interpretation', detail: '30 min · Phrasing & Dynamics',  done: false },
   ]},
-  'VOICEIQ': { title: 'VoiceIQ AI Features', icon: '\u25c8', content: [
+  'VOICEIQ': { title: 'VoiceIQ AI Features', icon: '◈', content: [
     { label: 'Real-time Pitch Analysis', detail: 'Instant feedback as you sing',    done: true  },
     { label: 'Tone Profiling',           detail: 'Map your unique voice signature', done: true  },
     { label: 'AI Vocal Coach',           detail: 'Personalised exercise plans',     done: false },
     { label: 'Emotion Mapping',          detail: 'Track expressiveness over time',  done: false },
     { label: 'Performance Prediction',   detail: 'AI readiness score before shows', done: false },
   ]},
-  'PROGRESS': { title: 'Your Progress', icon: '\u25b2', content: [
-    { label: 'Sessions Completed', detail: '24 sessions \u00b7 18.5 hours total', done: true },
-    { label: 'Pitch Accuracy',     detail: '87% \u2014 up 12% this month',        done: true },
+  'PROGRESS': { title: 'Your Progress', icon: '▲', content: [
+    { label: 'Sessions Completed', detail: '24 sessions · 18.5 hours total', done: true },
+    { label: 'Pitch Accuracy',     detail: '87% — up 12% this month',        done: true },
     { label: 'Range Expanded',     detail: '+4 semitones since Day 1',             done: true },
     { label: 'Consistency Streak', detail: '11 days in a row',                    done: true },
-    { label: 'Next Milestone',     detail: 'Level 13 \u2014 200 XP remaining',   done: false },
+    { label: 'Next Milestone',     detail: 'Level 13 — 200 XP remaining',   done: false },
   ]},
-  'ACHIEVEMENTS': { title: 'Achievements', icon: '\u25c9', content: [
-    { label: '\U0001f947 First Note',      detail: 'Completed your first session', done: true  },
-    { label: '\U0001f525 On Fire',         detail: '7-day practice streak',        done: true  },
-    { label: '\U0001f3af Pitch Perfect',   detail: '90%+ accuracy in a session',   done: true  },
-    { label: '\U0001f31f Rising Star',     detail: 'Reach Level 10',               done: true  },
-    { label: '\u26a1 Consistent',          detail: '30-day practice streak',       done: false },
-    { label: '\U0001f451 Master Vocalist', detail: 'Complete all 6 locations',     done: false },
+  'ACHIEVEMENTS': { title: 'Achievements', icon: '◉', content: [
+    { label: '🥇 First Note',      detail: 'Completed your first session', done: true  },
+    { label: '🔥 On Fire',         detail: '7-day practice streak',        done: true  },
+    { label: '🎯 Pitch Perfect',   detail: '90%+ accuracy in a session',   done: true  },
+    { label: '🌟 Rising Star',     detail: 'Reach Level 10',               done: true  },
+    { label: '⚡ Consistent',          detail: '30-day practice streak',       done: false },
+    { label: '👑 Master Vocalist', detail: 'Complete all 6 locations',     done: false },
   ]},
-  'PROFILE': { title: 'My Profile', icon: '\u25ce', content: [
+  'PROFILE': { title: 'My Profile', icon: '◎', content: [
     { label: 'Name',         detail: 'Vocalist',                 done: true },
-    { label: 'Level',        detail: '12 \u2014 Resonant Apprentice', done: true },
+    { label: 'Level',        detail: '12 — Resonant Apprentice', done: true },
     { label: 'Voice Type',   detail: 'Lyric Tenor',              done: true },
     { label: 'Member Since', detail: 'June 2026',                done: true },
     { label: 'Total XP',     detail: '2,840 experience points',  done: true },
@@ -247,7 +247,7 @@ export default function App() {
               <div key={i} style={{ padding:'13px 22px', borderBottom:'1px solid rgba(212,175,55,0.07)', display:'flex', alignItems:'flex-start', gap:11, transition:'background 0.2s' }}
               onMouseEnter={e => e.currentTarget.style.background='rgba(212,175,55,0.05)'}
               onMouseLeave={e => e.currentTarget.style.background='transparent'}>
-                <div style={{ width:20, height:20, borderRadius:'50%', flexShrink:0, border:`1.5px solid ${item.done?'#D4AF37':'rgba(212,175,55,0.28)'}`, background:item.done?'rgba(212,175,55,0.14)':'transparent', display:'flex', alignItems:'center', justifyContent:'center', fontSize:10, color:'#D4AF37', marginTop:1 }}>{item.done?'\u2713':''}</div>
+                <div style={{ width:20, height:20, borderRadius:'50%', flexShrink:0, border:`1.5px solid ${item.done?'#D4AF37':'rgba(212,175,55,0.28)'}`, background:item.done?'rgba(212,175,55,0.14)':'transparent', display:'flex', alignItems:'center', justifyContent:'center', fontSize:10, color:'#D4AF37', marginTop:1 }}>{item.done?'✓':''}</div>
                 <div>
                   <div style={{ fontFamily:"\'Cinzel\', serif", fontSize:'0.65rem', color:item.done?'#D4AF37':'rgba(248,246,240,0.55)', letterSpacing:'0.06em', marginBottom:3 }}>{item.label}</div>
                   <div style={{ fontFamily:"\'Raleway\', sans-serif", fontSize:'0.58rem', color:'rgba(248,246,240,0.38)', letterSpacing:'0.03em' }}>{item.detail}</div>
@@ -257,7 +257,7 @@ export default function App() {
           </div>
           <button onClick={() => { setSidePanel(null); setActiveNav(0) }} style={{ margin:'14px 22px', padding:'10px', background:'none', border:'1px solid rgba(212,175,55,0.22)', borderRadius:3, color:'rgba(212,175,55,0.55)', fontFamily:"\'Cinzel\', serif", fontSize:'0.58rem', letterSpacing:'0.15em', cursor:'none', transition:'all 0.2s' }}
           onMouseEnter={e => { e.currentTarget.style.borderColor='#D4AF37'; e.currentTarget.style.color='#D4AF37' }}
-          onMouseLeave={e => { e.currentTarget.style.borderColor='rgba(212,175,55,0.22)'; e.currentTarget.style.color='rgba(212,175,55,0.55)' }}>\u2190 BACK TO MAP</button>
+          onMouseLeave={e => { e.currentTarget.style.borderColor='rgba(212,175,55,0.22)'; e.currentTarget.style.color='rgba(212,175,55,0.55)' }}>← BACK TO MAP</button>
         </div>
       )}
 
@@ -281,8 +281,8 @@ export default function App() {
             <div style={{ fontFamily:"\'Raleway\', sans-serif", fontSize:'0.58rem', color:'rgba(248,246,240,0.45)', letterSpacing:'0.12em' }}>Welcome back,</div>
             <div style={{ fontFamily:"\'Cinzel\', serif", fontSize:'0.72rem', color:'#F8F6F0', letterSpacing:'0.08em' }}>Vocalist</div>
           </div>
-          <div style={{ width:38, height:38, borderRadius:'50%', background:'linear-gradient(135deg,#1a0f00,#3a2400)', border:'1.5px solid rgba(212,175,55,0.5)', display:'flex', alignItems:'center', justifyContent:'center', fontSize:17, color:'#D4AF37' }}>\u266a</div>
-          <div style={{ background:'rgba(212,175,55,0.1)', border:'1px solid rgba(212,175,55,0.3)', borderRadius:3, padding:'3px 11px', fontFamily:"\'Cinzel\', serif", fontSize:'0.58rem', color:'#D4AF37', letterSpacing:'0.1em' }}>\u2b50 LEVEL 12</div>
+          <div style={{ width:38, height:38, borderRadius:'50%', background:'linear-gradient(135deg,#1a0f00,#3a2400)', border:'1.5px solid rgba(212,175,55,0.5)', display:'flex', alignItems:'center', justifyContent:'center', fontSize:17, color:'#D4AF37' }}>♪</div>
+          <div style={{ background:'rgba(212,175,55,0.1)', border:'1px solid rgba(212,175,55,0.3)', borderRadius:3, padding:'3px 11px', fontFamily:"\'Cinzel\', serif", fontSize:'0.58rem', color:'#D4AF37', letterSpacing:'0.1em' }}>⭐ LEVEL 12</div>
         </div>
       </div>
 
@@ -297,19 +297,19 @@ export default function App() {
         padding:'0 24px 14px',
         transition:'left 0.38s cubic-bezier(0.4,0,0.2,1), opacity 1s 0.4s ease',
       }}>
-        <GoldBtn onClick={() => setInspModal(true)}>\u2726 DAILY INSPIRATION</GoldBtn>
+        <GoldBtn onClick={() => setInspModal(true)}>✦ DAILY INSPIRATION</GoldBtn>
         <div style={{ textAlign:'center' }}>
           <div style={{ fontFamily:"\'Cormorant Garamond\', serif", fontStyle:'italic', fontSize:'clamp(0.8rem,1.1vw,1rem)', color:'rgba(248,246,240,0.72)', letterSpacing:'0.04em' }}>Welcome to your vocal journey.</div>
-          <div style={{ fontFamily:"\'Cinzel\', serif", fontSize:'0.6rem', color:'#D4AF37', letterSpacing:'0.22em', marginTop:2 }}>EXPLORE \u00b7 PRACTICE \u00b7 EVOLVE</div>
+          <div style={{ fontFamily:"\'Cinzel\', serif", fontSize:'0.6rem', color:'#D4AF37', letterSpacing:'0.22em', marginTop:2 }}>EXPLORE · PRACTICE · EVOLVE</div>
         </div>
-        <GoldBtn onClick={() => setAnalysisModal(true)}>\u25c8 VOICE ANALYSIS</GoldBtn>
+        <GoldBtn onClick={() => setAnalysisModal(true)}>◈ VOICE ANALYSIS</GoldBtn>
       </div>
 
       {/* Daily Inspiration Modal */}
       {inspModal && (
         <div onClick={() => setInspModal(false)} style={{ position:'fixed', inset:0, zIndex:300, background:'rgba(4,4,10,0.8)', backdropFilter:'blur(10px)', display:'flex', alignItems:'center', justifyContent:'center' }}>
           <div onClick={e => e.stopPropagation()} style={{ background:'linear-gradient(160deg,#0c0b14,#08070f)', border:'1px solid rgba(212,175,55,0.35)', borderRadius:6, padding:'48px 52px', maxWidth:520, width:'90%', textAlign:'center', boxShadow:'0 0 60px rgba(212,175,55,0.12)' }}>
-            <div style={{ fontSize:32, color:'#D4AF37', marginBottom:16 }}>\u2726</div>
+            <div style={{ fontSize:32, color:'#D4AF37', marginBottom:16 }}>✦</div>
             <div style={{ fontFamily:"\'Cinzel\', serif", fontSize:'0.62rem', color:'rgba(212,175,55,0.55)', letterSpacing:'0.25em', marginBottom:24 }}>DAILY INSPIRATION</div>
             <div style={{ fontFamily:"\'Cormorant Garamond\', serif", fontStyle:'italic', fontSize:'clamp(1.1rem,2vw,1.5rem)', color:'#F8F6F0', lineHeight:1.65, marginBottom:20 }}>"{INSPIRATIONS[inspIdx].quote}"</div>
             <div style={{ fontFamily:"\'Raleway\', sans-serif", fontSize:'0.6rem', color:'rgba(212,175,55,0.55)', letterSpacing:'0.1em' }}>{INSPIRATIONS[inspIdx].author}</div>
@@ -346,7 +346,7 @@ export default function App() {
               <div style={{ fontFamily:"\'Cormorant Garamond\', serif", fontStyle:'italic', fontSize:'0.86rem', color:'rgba(248,246,240,0.62)', lineHeight:1.6 }}>Your breath control is exceptional. Focus on dynamic range this week to unlock new expressive depths.</div>
             </div>
             <div style={{ marginTop:20, display:'flex', gap:12, justifyContent:'flex-end' }}>
-              <GoldBtn onClick={() => { setAnalysisModal(false); openModal('aria') }}>ENTER CONSERVATORY \u2192</GoldBtn>
+              <GoldBtn onClick={() => { setAnalysisModal(false); openModal('aria') }}>ENTER CONSERVATORY →</GoldBtn>
               <GoldBtn onClick={() => setAnalysisModal(false)}>CLOSE</GoldBtn>
             </div>
           </div>
@@ -359,7 +359,7 @@ export default function App() {
           <button onClick={closeModal} style={{ position:'absolute', top:24, left:32, zIndex:210, background:'none', border:'1px solid rgba(212,175,55,0.4)', color:'#D4AF37', fontFamily:"\'Cinzel\', serif", fontSize:'0.7rem', letterSpacing:'0.2em', padding:'8px 20px', cursor:'none', transition:'all 0.3s' }}
           onMouseEnter={e => { e.currentTarget.style.background='rgba(212,175,55,0.1)'; e.currentTarget.style.borderColor='#D4AF37' }}
           onMouseLeave={e => { e.currentTarget.style.background='none'; e.currentTarget.style.borderColor='rgba(212,175,55,0.4)' }}>
-            \u2190 RETURN TO MAP
+            ← RETURN TO MAP
           </button>
           <ModalScreen navigate={id => { closeModal(); setTimeout(() => openModal(id), 600) }} />
         </div>
@@ -395,7 +395,7 @@ function LocationMarker({ loc, hovered, onEnter, onLeave, onClick }) {
       }}>
         <div style={{ fontFamily:"\'Cinzel\', serif", fontSize:'0.63rem', color:hovered?'#F5E6A3':'#D4AF37', letterSpacing:'0.06em', fontWeight:700, lineHeight:1.45, textTransform:'uppercase', marginBottom:5 }}>{loc.title[0]}<br/>{loc.title[1]}</div>
         <div style={{ fontFamily:"\'Raleway\', sans-serif", fontSize:'0.53rem', color:'rgba(248,246,240,0.62)', letterSpacing:'0.04em', lineHeight:1.5 }}>{loc.desc}</div>
-        {hovered && <div style={{ marginTop:9, fontFamily:"\'Cinzel\', serif", fontSize:'0.53rem', color:'#D4AF37', letterSpacing:'0.18em', borderTop:'1px solid rgba(212,175,55,0.22)', paddingTop:7 }}>ENTER \u2192</div>}
+        {hovered && <div style={{ marginTop:9, fontFamily:"\'Cinzel\', serif", fontSize:'0.53rem', color:'#D4AF37', letterSpacing:'0.18em', borderTop:'1px solid rgba(212,175,55,0.22)', paddingTop:7 }}>ENTER →</div>}
       </div>
     </div>
   )
