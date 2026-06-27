@@ -66,13 +66,14 @@ export default function LoadingScreen({ onComplete }) {
   useEffect(() => {
     const timers = [
       setTimeout(() => setPhase(1), 200),
-      setTimeout(() => setPhase(2), 1000),
-      setTimeout(() => setPhase(3), 2600),
-      setTimeout(() => setTextIn(true), 2900),
+      setTimeout(() => setPhase(2), 800),
+      setTimeout(() => setTextIn(true), 1400),
+      // Hold text for 2.5s, then zoom island in
+      setTimeout(() => setPhase(3), 3900),
       // Exit: fade UI first, then whole screen
-      setTimeout(() => setUiOut(true),  4000),
-      setTimeout(() => setPhase(4),     4400),
-      setTimeout(() => onComplete(),    5800),
+      setTimeout(() => setUiOut(true),  4400),
+      setTimeout(() => setPhase(4),     4800),
+      setTimeout(() => onComplete(),    6200),
     ]
     let p = 0
     progressRef.current = setInterval(() => {
