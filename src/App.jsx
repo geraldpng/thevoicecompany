@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Cursor from './components/Cursor'
 import LoadingScreen from './components/LoadingScreen'
+import MagicParticles from './components/MagicParticles'
 import Cave from './screens/Cave'
 import Forest from './screens/Forest'
 import Constellation from './screens/Constellation'
@@ -159,6 +160,9 @@ export default function App() {
         position:'fixed', inset:0, zIndex:1, pointerEvents:'none',
         background:'radial-gradient(ellipse at center, transparent 30%, rgba(4,4,10,0.5) 100%)',
       }} />
+
+      {/* Magic particles layer */}
+      {hubReady && <MagicParticles />}
 
       {/* Markers */}
       <div style={{
