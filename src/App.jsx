@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Cursor from './components/Cursor'
+import LoadingScreen from './components/LoadingScreen'
 import Cave from './screens/Cave'
 import Forest from './screens/Forest'
 import Constellation from './screens/Constellation'
@@ -115,6 +116,7 @@ const GoldBtn = ({ style, children, ...props }) => (
 )
 
 export default function App() {
+  const [loading, setLoading]         = useState(true)
   const [modal, setModal]             = useState(null)
   const [modalVisible, setModalVisible] = useState(false)
   const [activeNav, setActiveNav]     = useState(0)
@@ -144,6 +146,7 @@ export default function App() {
 
   return (
     <div style={{ width:'100vw', height:'100vh', display:'flex', background:'#04040a', overflow:'hidden', fontFamily:"'Raleway', sans-serif" }}>
+      {loading && <LoadingScreen onComplete={() => setLoading(false)} />}
       <Cursor />
 
       {/* ── Left Sidebar ── */}
