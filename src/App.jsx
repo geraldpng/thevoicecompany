@@ -153,11 +153,12 @@ export default function App() {
         display: 'flex', flexDirection: 'column', alignItems: 'center',
         padding: '20px 0', zIndex: 30, flexShrink: 0,
       }}>
-        <div style={{ marginBottom: 24, textAlign: 'center', padding: '0 8px' }}>
-          <div style={{ fontSize: 24, color: '#D4AF37', lineHeight: 1 }}>✦</div>
-          <div style={{ fontFamily:"'Cinzel', serif", fontSize: '0.55rem', color: '#D4AF37', letterSpacing: '0.12em', marginTop: 5, lineHeight: 1.5 }}>
-            THE<br/>VOICE<br/>COMPANY
-          </div>
+        <div style={{ marginBottom: 24, textAlign: 'center', padding: '0 10px' }}>
+          <img
+            src="https://static.wixstatic.com/media/38fefd_6918bd121bcf48d6a348508e22b4bb38~mv2.png/v1/crop/x_1482,y_1683,w_1234,h_801/fill/w_268,h_174,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/The%20Voice%20Company_gold-03-03.png"
+            alt="The Voice Company"
+            style={{ width: '100%', maxWidth: 64, objectFit: 'contain' }}
+          />
         </div>
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 2, width: '100%' }}>
           {NAV_ITEMS.map((item, i) => (
